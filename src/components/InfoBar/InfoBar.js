@@ -2,10 +2,10 @@ import React from 'react';
 import closeIcon from '../../icons/closeIcon.png';
 import onlineIcon from '../../icons/onlineIcon.png';
 import './InfoBar.css';
-
+import {NavInfo} from './InfoBar.style';
 
 const InfoBar = ({room}) => (
-  <div className="infoBar">
+  <NavInfo>
     <div className="leftInnerContainer">
       <img className="onlineIcon" src={onlineIcon} alt="online"/>
       <h3>{room}</h3>
@@ -13,7 +13,7 @@ const InfoBar = ({room}) => (
     <div className="rightInnerContainer">
       <a href="/"><img src={closeIcon} alt="close"/></a>
     </div>
-  </div>
+  </NavInfo>
 )
 
 export default InfoBar

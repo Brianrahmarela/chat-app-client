@@ -1,71 +1,107 @@
-html, body {
-  font-family: 'Roboto', sans-serif;
-  padding: 0;
-  margin: 0;
-}
+form {
+	background-color: rgb(255, 255, 255);
+	padding: 20px 60px 20px 60px;
+  margin-top: 70px;
+	border-radius: 30px;
+  position: relative;
+	box-shadow: 
+  /* 0 1px 1px rgba(169, 172, 174, 0.11), 0 2px 2px rgba(169, 172, 174, 0.11),
+		0 4px 4px rgba(169, 172, 174, 0.11), 0 8px 8px rgba(169, 172, 174, 0.11),
+		0 16px 16px rgba(169, 172, 174, 0.11), 0 32px 32px rgba(169, 172, 174, 0.11); */
 
-#root {
-  height: 100vh;
-}
+    0 2.8px 2.2px rgba(169, 172, 174, 0.034),
+    0 6.7px 5.3px rgba(169, 172, 174, 0.048),
+    0 12.5px 10px rgba(169, 172, 174, 0.06),
+    0 22.3px 17.9px rgba(169, 172, 174, 0.072),
+    0 41.8px 33.4px rgba(169, 172, 174, 0.086),
+    0 100px 80px rgba(169, 172, 174, 0.12)
+  }
 
-* {
-  box-sizing: border-box;
-}
+.cardCustom {
+	/* background-color: rgb(255, 255, 255); */
+  width: 400px;
+	padding: 40px 0 40px 0;
+	border-radius: 30px 30px 0 0;
+  position: absolute;
+	box-shadow: 
+  /* 0 1px 1px rgba(169, 172, 174, 0.11), 0 2px 2px rgba(169, 172, 174, 0.11),
+		0 4px 4px rgba(169, 172, 174, 0.11), 0 8px 8px rgba(169, 172, 174, 0.11),
+		0 16px 16px rgba(169, 172, 174, 0.11), 0 32px 32px rgba(169, 172, 174, 0.11); */
 
-.joinOuterContainer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
-  align-items: center;
-  background-color: #1A1A1D;
-}
+    0 2.8px 2.2px rgba(169, 172, 174, 0.034),
+    0 6.7px 5.3px rgba(169, 172, 174, 0.048),
+    0 12.5px 10px rgba(169, 172, 174, 0.06),
+    0 22.3px 17.9px rgba(169, 172, 174, 0.072),
+    0 41.8px 33.4px rgba(169, 172, 174, 0.086),
+    0 100px 80px rgba(169, 172, 174, 0.12)
+  }
 
-.joinInnerContainer {
-  width: 20%;
-}
-
-.joinInput {
-  border-radius: 0;
-  padding: 15px 20px;
-  width: 100%;
-}
-
-.heading {
-  color: white;
-  font-size: 2.5em;
-  padding-bottom: 10px;
-  border-bottom: 2px solid white;
-}
-
-.button {
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #2979FF;
-    padding: 20px;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    width: 100%;
-}
-
-.mt-20 {
-  margin-top: 20px;
-}
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .joinOuterContainer {
-    height: 100%;
+  .cardCustom {
+
+    width: 330px;
   }
-
-  .joinInnerContainer {
-    width: 90%;
-  }
-
-
+  /* .buttonSignIn{
+    width: 80% !important;
+  } */
 }
 
-button:focus {
-  outline: 0;
+@media (min-width: 481px) and (max-width: 1023px) {
+/* .formBox {
+    width: 100%;  
+} */
+/* .buttonSignIn{
+  width: 80% !important;
+} */
+}
+@media (min-width: 1024px) {
+/* .formBox {
+    width: 100%;  
+} */
+/* .buttonSignIn{
+  width: 20%;
+} */
+}
+
+.titleJoin{
+  color: #4C2C59;
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: -0.2px;
+  margin: 38px 0 46px 0;
+}
+
+/* .inputan{
+
+} */
+
+.buttonSignIn{
+  /* background-color: #25ccbf;
+  border-style: none; */
+  width: 70%;
+  margin-top: 73px;
+  padding: 20px 0 20px 0;
+  font-size: 19px;
+  font-weight: 700;
+  border-radius: 16px;
+}
+
+.form-group {
+  width: 100%;
+  border-style: solid;
+  border-color: #e1e0e4;
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 15px;
+}
+/* .form-control:not(active){
+  color:white;
+} */
+
+.form-control:focus{
+  color: #8A8A8A;
+}
+.inputID::placeholder {
+  color: #8A8A8A;
 }
