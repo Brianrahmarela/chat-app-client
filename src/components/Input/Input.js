@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Input.css';
+import { Button} from "react-bootstrap";
 
 
 const Input = ({message, setMessage, sendMessage}) => (
@@ -13,7 +14,15 @@ const Input = ({message, setMessage, sendMessage}) => (
       onChange={(event) => setMessage(event.target.value)}
       onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
     />
-    <button className="sendButton" onClick={(event) => sendMessage(event)}>Send</button>
+    {/* <button className="sendButton tw-bg-secondary" onClick={(event) => sendMessage(event)}>Send</button> */}
+    <Button
+      type="submit"
+      variant="primary"
+      className="tw-bg-secondary tw-border-secondary sendButton"
+      onClick={(event) => sendMessage(event)}
+    >
+      Send
+    </Button>
   </form>
 )
 

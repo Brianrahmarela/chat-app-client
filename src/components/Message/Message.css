@@ -1,8 +1,6 @@
 .messageBox {
-  background: #F3F3F3;
   border-radius: 20px;
-  padding: 5px 20px;
-  color: white;
+  padding: 12px 20px;
   display: inline-block;
   max-width: 80%;
 }
@@ -11,8 +9,10 @@
   width: 100%;
   letter-spacing: 0;
   float: left;
-  font-size: 1.1em;
+  font-size: 16.5px;
   word-wrap: break-word;
+  text-align: left;
+  font-weight: 400;
 }
 
 .messageText img {
@@ -29,18 +29,20 @@
 .sentText {
   display: flex;
   align-items: center;
-  font-family: Helvetica;
-  color: #828282;
-  letter-spacing: 0.3px;
+  font-size: 14.5px;
+  /* font-family: Helvetica; */
+  /* color: #828282; */
+  
+  /* letter-spacing: 0.3px; */
 }
 
-.pl-10 {
+/* .pl-10 {
   padding-left: 10px;
 }
 
 .pr-10 {
   padding-right: 10px;
-}
+} */
 
 .justifyStart {
   justify-content: flex-start;
@@ -50,18 +52,18 @@
   justify-content: flex-end;
 }
 
-.colorWhite {
+/* .colorWhite {
   color: white;
 }
 
 .colorDark {
   color: #353535;
-}
+} */
 
-.backgroundBlue {
+/* .backgroundBlue {
   background: #2979FF;
-}
+} */
 
-.backgroundLight {
+/* .backgroundLight {
   background: #F3F3F3;
-}
+} */

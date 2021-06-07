@@ -8,18 +8,21 @@ module.exports = {
     backgroundColor: theme => ({
       'base': '#4C2C59',
       'secondary': '#25ccbf',
-      'desktop': '#EEEEEE',
+      'desktop': '#F8F7FB',
       'white': '#FFFFFF',
-      'black': '#000000'
+      'black': '#000000',
+      'accent': '#F8F7FB',
+      'third': '#6C2B86'
     }),
     textColor: {
       'basic': '#4C2C59',
       'secondary': '#25ccbf',
+      'accent': '#4C2C59',
       'desktop': '#EEEEEE',
       'white': '#FFFFFF',
       'black': '#000000',
       'grey': '#4E4E4E',
-      'gray': '#949698'
+      'gray': '#828282'
     },
     borderColor: {
       'base': '#4C2C59',

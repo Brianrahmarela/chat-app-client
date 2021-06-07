@@ -6,7 +6,7 @@ import "./Join.css";
 
 import SvgRoom from '../../iconcomponents/Room';
 import SvgUserName from '../../iconcomponents/UserName';
-import Logo from '../../iconcomponents/Logo';
+import Logo from '../../iconcomponents/Logorealchat';
 // import chaticon from '../../assets/chat-icon.svg';
 // import {Button} from '../Button/Button.style'
 // Import { ButtonSignIn } from './';
@@ -18,16 +18,10 @@ function Join() {
 	return (
 		<Container className="customHeightandFlexDirection d-flex align-items-center justify-content-center">
 			<Row className="d-flex align-items-center justify-content-center">
-				<Card className="tw-bg-base cardCustom align-items-center">
+				<Card className="tw-bg-base cardCustom align-items-center" style={{ fontSize: '60px'}}>
 				<Logo/>
-
-				<Card.Title className="tw-text-white tw-text-sm tw-mt-2">Welcome in Real Chat!</Card.Title>
+				<Card.Title className="tw-text-white tw-text-sm tw-mt-0.5">Welcome in Real Chat!</Card.Title>
 				</Card>
-
-				
-				{/* <div>
-				<h1>TES</h1>
-				</div> */}
 			</Row>
 			<Row className="">
 				<Col>
